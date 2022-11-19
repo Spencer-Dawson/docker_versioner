@@ -19,6 +19,7 @@ Note: This is a common practice, but unsecure
 * DJANGO_SUPERUSER_USERNAME
 * DJANGO_SUPERUSER_PASSWORD
 * DJANGO_SUPERUSER_EMAIL
+
 Not supplying these arguments is fine, but that means you will have to shell into the container to run a command to set the admin credentials on first run
 * 'python manage.py createsuperuser' from the /opt/versioner directory
 
@@ -29,5 +30,5 @@ Not supplying these arguments is fine, but that means you will have to shell int
 ## Todo:
 Here are some things I might get around to changing eventually
 * Support HTTPS (Internal only tool so limited benefit)
-* Use gitbhub actions to automatically update the public image
+* Use github actions to automatically update the public image
 * Tie public images to release branches of Spencer-Dawson/versioner instead of main branch
